@@ -4,13 +4,27 @@
  *
  * PHP Version 7.0
  *
- * @package    benchmarks/src/resources/testClasses
+ * @package
  * @author     Koen Hengsdijk
  * @copyright  2012-2018, M2Mobi BV, Amsterdam, The Netherlands
  */
+
+
 namespace TestClasses;
 
-class MinimumSingleton
+
+class SmallSingleton
 {
+    protected $foo;
+
+    /**
+     * SmallSingleton constructor.
+     * @param $foo
+     */
+    public function __construct($foo)
+    {
+        $this->foo = $foo;
+    }
+
 
 }
